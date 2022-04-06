@@ -1,7 +1,7 @@
-const { BadRequestError } = require('../../modules/coreErrors');
+const { BadRequestError } = require('../../../../helpers/coreErrors');
 const handler = require('.');
 const { BOOKMARK_FIXTURE } = require('./fixtures');
-const BookMark = require('../../modules/models/bookmark');
+const BookMark = require('../../models/bookmark');
 
 async function populate() {
   await BookMark.query().insert(BOOKMARK_FIXTURE);

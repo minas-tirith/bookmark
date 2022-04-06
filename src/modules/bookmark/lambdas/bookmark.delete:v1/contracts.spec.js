@@ -1,4 +1,4 @@
-const { ResourceNotFoundError, BadRequestError } = require('../../modules/coreErrors');
+const { ResourceNotFoundError, BadRequestError } = require('../../../../helpers/coreErrors');
 const handler = require('.');
 
 describe('lambdas/bookmark.delete:v1', () => {

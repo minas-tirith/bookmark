@@ -4,7 +4,7 @@ const Koa = require('koa');
 const Router = require('koa-router');
 const bodyParser = require('koa-bodyparser');
 const cors = require('@koa/cors');
-const parseQualifier = require('./modules/parseQualifier');
+const parseQualifier = require('./helpers/parseQualifier');
 const createContext = require('./middlewares/createContext');
 
 const app = new Koa();
@@ -12,9 +12,9 @@ const router = new Router();
 
 const PORT = process.env.PORT || 8000;
 
-require('fs').readdirSync(`${__dirname}/controllers`).forEach((qualifier) => {
+require('fs').readdirSync(`${__dirname}/modules/bookmark/controllers`).forEach((qualifier) => {
   const { method, route } = parseQualifier(qualifier);
-  router[method](route, require(`${__dirname}/controllers/${qualifier}`).handler);
+  router[method](route, require(`${__dirname}/modules/bookmark/controllers/${qualifier}`).handler);
 });
 
 // error middleware

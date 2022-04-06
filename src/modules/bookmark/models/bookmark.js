@@ -1,4 +1,4 @@
-const Model = require('../../drivers/knex');
+const Model = require('../../../drivers/knex');
 
 class Bookmark extends Model {
   static get tableName() { return 'bookmarks'; }

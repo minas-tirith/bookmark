@@ -30,8 +30,6 @@ make run
 # Lexique
 - Controller: An entry point.
 - Lambda: A function invokable inside the project.
-- Drivers: An important external dependency
-- Modules: An important dependency
 
 # Système de routing
 <p>The http request is used to retrieved the payload and create qualifier based on the HTTP url.</p>

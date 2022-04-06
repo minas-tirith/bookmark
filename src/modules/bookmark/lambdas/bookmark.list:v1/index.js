@@ -1,4 +1,4 @@
-const BookMark = require('../../modules/models/bookmark');
+const BookMark = require('../../models/bookmark');
 
 async function handler() {
   const bookmarks = await BookMark.query();

@@ -1,6 +1,6 @@
-const { ResourceNotFoundError, BadRequestError } = require('../../modules/coreErrors');
+const { ResourceNotFoundError, BadRequestError } = require('../../../../helpers/coreErrors');
 const handler = require('.');
-const BookMark = require('../../modules/models/bookmark');
+const BookMark = require('../../models/bookmark');
 
 async function flush() {
   await BookMark.query().delete();

@@ -1,6 +1,6 @@
 const axios = require('axios');
-const { assert, BadRequestError } = require('../../modules/coreErrors');
-const BookMark = require('../../modules/models/bookmark');
+const { assert, BadRequestError } = require('../../../../helpers/coreErrors');
+const BookMark = require('../../models/bookmark');
 
 async function handler(data) {
   assert(!data.payload || !data.payload.url, BadRequestError, 'Invalid payload');

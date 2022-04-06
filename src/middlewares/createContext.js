@@ -1,5 +1,5 @@
 const { v4: uuidv4 } = require('uuid');
-const parseRoute = require('../modules/parseRoute');
+const parseRoute = require('../helpers/parseRoute');
 
 async function createContext(ctx, next) {
   ctx.context = {

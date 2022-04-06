@@ -1,7 +1,7 @@
 const axios = require('axios');
 const handler = require('.');
 const { BOOKMARK_FIXTURE } = require('./fixtures');
-const BookMark = require('../../modules/models/bookmark');
+const BookMark = require('../../models/bookmark');
 
 jest.mock('axios');
 

@@ -1,5 +1,5 @@
-const { assert, BadRequestError, ResourceNotFoundError } = require('../../modules/coreErrors');
-const BookMark = require('../../modules/models/bookmark');
+const { assert, BadRequestError, ResourceNotFoundError } = require('../../../../helpers/coreErrors');
+const BookMark = require('../../models/bookmark');
 
 async function handler(data) {
   assert(!data.filters || !data.filters.id, BadRequestError, 'Invalid filters');
