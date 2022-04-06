@@ -1,0 +1,18 @@
+{
+    "extends": [
+        "airbnb-base"
+    ],
+    "plugins": ["jest"],
+    "env": {
+        "jest/globals": true
+    },
+    "rules": {
+        "no-param-reassign": 0,
+        "import/no-dynamic-require": 0,
+        "global-require": 0,
+        "prefer-destructuring": 0,
+        "camelcase": 0,
+        "max-classes-per-file": 0,
+        "default-param-last": 0
+    }
+}
